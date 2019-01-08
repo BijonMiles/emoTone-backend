@@ -6,7 +6,7 @@ require("json")
 #
 # var recognition = new SpeechRecognition
 #
-# 
+#
 # recogniton.start()
 # recognition.end()
 # recognition.onend()
@@ -28,7 +28,7 @@ class TextInputsController < ApplicationController
 
   def create
 
-    # tone analyzer api here
+    
     tone_analyzer = IBMWatson::ToneAnalyzerV3.new(
       iam_apikey: ENV['IBMWATSON_API_KEY'],
       version: "2017-09-21"
